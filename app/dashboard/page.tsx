@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { auth, db } from '../../lib/firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
-import confetti from 'canvas-confetti';
+const confetti = require('canvas-confetti');
+
 import ProgressChart from '../../components/ProgressChart';
 import TopicProgressChart from '../../components/TopicProgressChart';
 import DailyProgressChart from '../../components/DailyProgressChart';
